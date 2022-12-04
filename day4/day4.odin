@@ -24,7 +24,7 @@ get_input :: proc(filepath: string) -> [dynamic]bool {
         f_end := strconv.atoi(first[1])
         s_start := strconv.atoi(second[0])
         s_end := strconv.atoi(second[1])
-        /* Part 1 
+        /* Part 1
         if f_start >= s_start && f_end <= s_end ||
             s_start >= f_start && s_end <= f_end {
             append(&input, true);
