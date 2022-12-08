@@ -10,9 +10,8 @@ parse_input :: proc(data: []u8) {
     dir_size := make(map[string]uint)
     defer delete(dir_size)
     
-    //dir_stack : queue.Queue(string)
     dir_stack : [dynamic]string
-
+    defer delete(dir_stack)
 
     it := string(data)
     for line in strings.split_lines_iterator(&it) {
@@ -64,12 +63,10 @@ parse_input :: proc(data: []u8) {
             sum += v
         }
     }
-
     fmt.printf("Part 1: %d\n", sum)
 
     used := dir_size["/"]
     unused := 70000000 - used
-
     if unused > 30000000 {
         fmt.printf("We already have enough space\n")
     }
@@ -81,7 +78,6 @@ parse_input :: proc(data: []u8) {
             lowest = v
         }
     }
-
     fmt.printf("Part 2: %d\n", lowest)
 }
 

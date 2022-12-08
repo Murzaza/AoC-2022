@@ -6,8 +6,6 @@ import "core:strings"
 import "core:strconv"
 
 parse_input :: proc(data: []u8) {
-    stream := string(data)
-
     /* Part 1 */
     for i := 3; i < len(data); i += 1 {
         if check_rune_uniqueness(string(data[i-3 : i+1])) {
