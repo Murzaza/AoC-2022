@@ -4,7 +4,6 @@ import "core:fmt"
 import "core:os"
 import "core:strings"
 import "core:strconv"
-import queue "core:container/queue"
 
 parse_input :: proc(data: []u8) {
     dir_size := make(map[string]uint)
