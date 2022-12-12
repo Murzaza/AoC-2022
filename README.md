@@ -17,3 +17,4 @@ My solutions to [Advent of Code 2022](https://adventofcode.com/2022) using [Odin
 | 9   | ⭐⭐  |
 | 10  | ⭐⭐  |
 | 11  | ⭐⭐  |
+| 12  | ⭐⭐  |
